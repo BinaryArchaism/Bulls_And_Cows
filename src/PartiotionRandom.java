@@ -1,5 +1,5 @@
 /**
- * Created by Константин on 15.01.2017.
+ * Created by Dmitrii on 15.01.2017.
  */
 public class PartiotionRandom {
     int random = (int) ((Math.random() * 9000) + 1000);

@@ -4,6 +4,8 @@
 public class BullsAndCows {
     int na, nb, nc, nd;
     int ra, rb, rc, rd;
+    int bulls;
+    int cows;
 
     public BullsAndCows(int na, int nb, int nc, int nd) {
         this.na = na;
@@ -20,7 +22,13 @@ public class BullsAndCows {
         this.rb = rb;
         this.rc = rc;
         this.rd = rd;
-        Unite u = new Unite(na, nb, nc, nd, ra, rb, rc, rd);
+    }
+    public void equals() {
+        one(na, ra, rb, rc, rd);
     }
 
+    public int one(int l, int a, int b, int c, int d){
+        if (l == a) {bulls = 1;}
+        return l;
+    }
 }
