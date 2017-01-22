@@ -6,12 +6,11 @@ public class PartiotionRandom {
     int ra, rb, rc, rd;
 
 
-    public void rnumbers(){
+    public BullsAndCows rnumbers(){
         this.ra = random/1000;
         this.rb = random/100%10;
         this.rc = random/10%10;
         this.rd = random/1%10;
-        BullsAndCows bac = new BullsAndCows(rb, rc, rd);
-        BullsAndCows bac1 = new BullsAndCows(ra);
+        return new BullsAndCows(ra, rb, rc, rd);
     }
 }

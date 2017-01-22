@@ -12,5 +12,6 @@ public class Main {
         pn.nnumbers();
         PartiotionRandom pr = new PartiotionRandom();
         pr.rnumbers();
+
     }
 }
