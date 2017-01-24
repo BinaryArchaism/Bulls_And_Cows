@@ -10,6 +10,5 @@ public class Main {
         System.out.println("Введите ваше число");
         PartiotionNumber pn = new PartiotionNumber(sc.nextInt());
         pn.solve();
-
     }
 }
