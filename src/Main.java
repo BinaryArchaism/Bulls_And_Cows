@@ -9,9 +9,9 @@ public class Main {
         System.out.println("Игра Быки и Коровы");
         System.out.println("Введите ваше число");
         PartiotionNumber pn = new PartiotionNumber(sc.nextInt());
-        pn.nnumbers();
+        pn.solve();
         PartiotionRandom pr = new PartiotionRandom();
-        pr.rnumbers();
+        pr.solve();
 
     }
 }
