@@ -9,6 +9,6 @@ public class Main {
         System.out.println("Игра Быки и Коровы");
         System.out.println("Введите ваше число");
         PartiotionNumber pn = new PartiotionNumber(sc.nextInt());
-        pn.solve();
-    }
+        pn.solve1();
+        }
 }
