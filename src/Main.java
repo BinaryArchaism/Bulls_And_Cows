@@ -3,6 +3,8 @@
  */
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Игра быки и коровы");
+        System.out.println("Введите ваше число");
         Field field = new Field();
         field.start();
     }
