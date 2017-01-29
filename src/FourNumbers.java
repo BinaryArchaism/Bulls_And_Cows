@@ -12,6 +12,7 @@ public class FourNumbers {
         d = number/1%10;
         if ((a == b | a == c | a == d) | (b == c | b == d) | (c == d)){
             System.out.println("Вы ввели неправильное число");return false;}
+        else if (a == 0) {System.out.println("Вы ввели неправильное число");return false;}
         else return true;
     }
     public boolean checkingRandom(int a, int b, int c, int d){
