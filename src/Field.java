@@ -17,10 +17,10 @@ public class Field {
         } while (true);
         Computer computer = new Computer();
         do {
-            ra = computer.getRandoma();
-            rb = computer.getRandomb();
-            rc = computer.getRandomc();
-            rd = computer.getRandomd();
+            ra = computer.getRandomA();
+            rb = computer.getRandomB();
+            rc = computer.getRandomC();
+            rd = computer.getRandomD();
             corectNumber = fourNumbers.checkingRandom(ra, rb, rc, rd);
             if (corectNumber == true) {break;}
         } while (true);
