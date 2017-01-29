@@ -27,7 +27,7 @@ public class Field {
         do {
             bulls = fourNumbers.bullSolver(ra, rb, rc, rd);
             cows = fourNumbers.cowSolver(ra, rb, rc, rd);
-            System.out.println("B " + bulls + " C " + cows);
+            System.out.println("Быки: " + bulls + " Коровы: " + cows);
             if (bulls == 4) {break;}
             else {System.out.println("Введите число заного");
             do {
@@ -38,5 +38,6 @@ public class Field {
             bulls = 0;
             cows = 0;
         } while (true);
+        System.out.println("Вы выиграли!");
     }
 }
