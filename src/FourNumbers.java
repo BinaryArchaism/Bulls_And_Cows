@@ -2,7 +2,6 @@
  * Created by Dmitrii on 28.01.2017.
  */
 public class FourNumbers {
-    int number;
     int a, b, c, d;
 
     public boolean checkingNumber(int number){
