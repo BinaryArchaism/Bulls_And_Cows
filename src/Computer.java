@@ -6,21 +6,12 @@ public class Computer {
 
     public Computer() {
         fourNumbers = new FourNumbers();
-        int num;
         fourNumbers.setA(getRandom(1, 9));
-
         do {
-            num = getRandom(0, 9);
-        } while (num == fourNumbers.getA());
-        fourNumbers.setB(num);
-
-        do {
-            num = getRandom(0, 9);
-        } while (num == fourNumbers.getA() || num == fourNumbers.getB());
-
-        do {
-            num = getRandom(0, 9);
-        } while (num == fourNumbers.getA() || num == fourNumbers.getB() || num == fourNumbers.getC());
+            fourNumbers.setB(getRandom(0, 9));
+            fourNumbers.setC(getRandom(0, 9));
+            fourNumbers.setD(getRandom(0, 9));
+        } while (!fourNumbers.computerCheckingNumber());
     }
 
     public int getRandom(int a, int b) {
