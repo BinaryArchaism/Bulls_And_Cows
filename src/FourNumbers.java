@@ -21,6 +21,12 @@ public class FourNumbers {
         else return true;
     }
 
+    public boolean computerCheckingNumber(){
+        if ((a == b | a == c | a == d) | (b == c | b == d) | (c == d)) return false;
+        else if (a == 0) return false;
+        else return true;
+    }
+
     public int bullSolver(FourNumbers fourNumbers){
         int bulls = 0;
         if (a == fourNumbers.getA()) bulls++;
