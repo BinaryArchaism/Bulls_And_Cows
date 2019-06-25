@@ -11,10 +11,10 @@ public class Field {
 
             int bulls = computer.getFourNumbers().bullSolver(player.fourNumbers);
             int cows = computer.getFourNumbers().cowSolver(player.fourNumbers);
-            System.out.println("Быки: " + bulls + " Коровы: " + cows);
+            System.out.println("Bulls: " + bulls + " Cows: " + cows);
 
-            if (bulls == 4) {System.out.println("Вы выиграли!");return;}
-            else System.out.println("Введите число заного");
+            if (bulls == 4) {System.out.println("You win!");return;}
+            else System.out.println("Input number again, please");
         } while (true);
     }
 }

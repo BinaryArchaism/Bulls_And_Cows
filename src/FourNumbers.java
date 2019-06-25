@@ -14,16 +14,16 @@ public class FourNumbers {
         d = number/1%10;
     }
 
-    public boolean checkingNumber(){
-        if ((a == b | a == c | a == d) | (b == c | b == d) | (c == d)){
-            System.out.println("Вы ввели неправильное число");return false;}
-        else if (a == 0) {System.out.println("Вы ввели неправильное число");return false;}
+    public boolean playerCheckingNumber(){
+        if (!computerCheckingNumber()){
+            System.out.println("Your number is incorrect, numerals can not be repeated");
+            return false;
+        }
         else return true;
     }
 
     public boolean computerCheckingNumber(){
-        if ((a == b | a == c | a == d) | (b == c | b == d) | (c == d)) return false;
-        else if (a == 0) return false;
+        if ((a == b | a == c | a == d) | (b == c | b == d) | (c == d) | (a ==0)) return false;
         else return true;
     }
 
