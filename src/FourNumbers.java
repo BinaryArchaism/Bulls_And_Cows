@@ -1,6 +1,3 @@
-/**
- * Created by Dmitrii on 28.01.2017.
- */
 public class FourNumbers {
     int a, b, c, d;
 
