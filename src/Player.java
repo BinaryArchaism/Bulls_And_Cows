@@ -4,9 +4,11 @@ public class Player {
     FourNumbers fourNumbers;
 
     public void getNumber(){
+        fourNumbers = new FourNumbers();
         Scanner sc = new Scanner(System.in);
+        int number;
         do {
-            fourNumbers = new FourNumbers(sc.nextInt());
-        } while (!fourNumbers.playerCheckingNumber());
+            number = sc.nextInt();
+        } while (!fourNumbers.playerCheckingNumber(number));
     }
 }

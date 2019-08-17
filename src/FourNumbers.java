@@ -4,14 +4,8 @@ public class FourNumbers {
     public FourNumbers() {
     }
 
-    public FourNumbers(int number) {
-        a = number/1000;
-        b = number/100%10;
-        c = number/10%10;
-        d = number/1%10;
-    }
-
-    public boolean playerCheckingNumber(){
+    public boolean playerCheckingNumber(int number){
+        setNumerals(number);
         if (!computerCheckingNumber()){
             System.out.println("Your number is incorrect, numerals can not be repeated");
             return false;
@@ -39,6 +33,12 @@ public class FourNumbers {
         if (c == fourNumbers.getA() | c == fourNumbers.getB() | c == fourNumbers.getD()) cows++;
         if (d == fourNumbers.getA() | d == fourNumbers.getB() | d == fourNumbers.getC()) cows++;
         return cows;
+    }
+    private void setNumerals(int number) {
+        a = number/1000;
+        b = number/100%10;
+        c = number/10%10;
+        d = number/1%10;
     }
 
     public int getA() {
