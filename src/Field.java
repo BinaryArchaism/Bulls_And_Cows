@@ -7,11 +7,6 @@ public class Field {
         do {
             player.getNumber();
 
-            System.out.print(computer.getFourNumbers().a);
-            System.out.print(computer.getFourNumbers().b);
-            System.out.print(computer.getFourNumbers().c);
-            System.out.println(computer.getFourNumbers().d);
-
             int bulls = computer.getFourNumbers().bullSolver(player.fourNumbers);
             int cows = computer.getFourNumbers().cowSolver(player.fourNumbers);
             quantityOfTries++;
